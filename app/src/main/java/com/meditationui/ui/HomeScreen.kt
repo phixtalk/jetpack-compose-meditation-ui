@@ -169,3 +169,17 @@ fun FeatureSection(features: List<Feature>) {
         }
     }
 }
+
+@Composable
+fun FeatureItem(feature: Feature) {
+    BoxWithConstraints(modifier = Modifier
+        .padding(7.5.dp)
+        .aspectRatio(1f)
+        .clip(RoundedCornerShape(10.dp))
+        .background(feature.darkColor)
+    ) {
+        val width = constraints.maxWidth
+        val height = constraints.maxHeight
+
+    }
+}
